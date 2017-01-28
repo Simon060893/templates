@@ -1,0 +1,21 @@
+{
+  "name": "templates",
+  "homepage": "https://github.com/Simon060893/templates",
+  "authors": [
+    "Simon <paskusam@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "^3.1.1"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
