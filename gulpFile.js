@@ -24,6 +24,8 @@ var gulp = require('gulp'),
     cssnano = require('gulp-cssnano'),
     merge = require('event-stream').merge,
     typescript = require('gulp-typescript'),
+  jshint = require('gulp-jshint'),
+    stylish = require('jshint-stylish'),
     reload = browserSync.reload;
 
 var sourcemaps = require('gulp-sourcemaps');
@@ -108,6 +110,8 @@ gulp.task('js:build', function () {
         .on('error', function(err) { console.error(err); this.emit('end'); })
         .pipe(source('build.js'))
         // .pipe(rigger())
+        .pipe(jshint('.jshintrc'))
+        .pipe(jshint.reporter('jshint-stylish'))  
         .pipe(buffer())
         // .pipe(concat(path.out.js.hash))
         // .pipe(sourcemaps.init())

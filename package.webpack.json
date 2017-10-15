@@ -1,0 +1,33 @@
+{
+  "name": "templates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-wpack": "webpack --config webpack.config.js",
+    "static-server": "static &",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simon060893/templates.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Simon060893/templates/issues"
+  },
+  "homepage": "https://github.com/Simon060893/templates#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "node-static": "^0.7.10",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "webpack": "^3.7.1"
+  },
+  "dependencies": {
+    "three": "^0.84.0"
+  }
+}
